@@ -1,3 +1,7 @@
+# Set vim as the default editor
+export EDITOR=vim
+
+# Rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
