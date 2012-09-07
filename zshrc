@@ -34,3 +34,6 @@ plugins=(bundler cap gem git rails3 rake rbenv ruby)
 source $ZSH/oh-my-zsh.sh
 
 alias gd='git diff'
+
+# Use vi-mode.
+set -o vi
