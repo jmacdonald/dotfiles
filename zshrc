@@ -33,4 +33,4 @@ plugins=(bundler cap gem git rails3 rake rbenv ruby)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+alias gd='git diff'
