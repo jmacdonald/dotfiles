@@ -14,3 +14,4 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 " ctrlp plugin options
 let g:ctrlp_by_filename = 1
 let g:ctrlp_open_new_file = 'h'
+let g:ctrlp_open_multiple_files = 'h'
