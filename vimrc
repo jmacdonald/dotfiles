@@ -10,3 +10,6 @@ set pastetoggle=<F2>
 
 " Load ctrlp plugin.
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" ctrlp plugin options
+let g:ctrlp_by_filename = 1
