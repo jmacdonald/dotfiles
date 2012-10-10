@@ -1,3 +1,5 @@
 [user]
 	name = Jordan MacDonald
 	email = jordan@wastedintelligence.com
+[color]
+	ui = true
