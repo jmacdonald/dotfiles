@@ -9,15 +9,12 @@ filetype indent on
 set pastetoggle=<F2>
 
 " Load ctrlp plugin.
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+set runtimepath^=~/.vim/ctrlp.vim
 
 " Load git plugin.
 set runtimepath^=~/.vim/git-vim
 
 " ctrlp plugin options
-
-" Highlight last opened file by default.
-let g:ctrlp_cmd = 'CtrlPMRU'
 
 " Search by filename, not by path.
 let g:ctrlp_by_filename = 1
