@@ -36,4 +36,4 @@ source $ZSH/oh-my-zsh.sh
 alias gd='git diff'
 
 # Use vi-mode.
-set -o vi
+bindkey -v
