@@ -16,6 +16,9 @@ set runtimepath^=~/.vim/git-vim
 
 " ctrlp plugin options
 
+" Ignore temporary/binary/useless files.
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+
 " Search by filename, not by path.
 let g:ctrlp_by_filename = 1
 
