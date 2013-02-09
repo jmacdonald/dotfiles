@@ -16,9 +16,6 @@ set runtimepath^=~/.vim/git-vim
 
 " ctrlp plugin options
 
-" Search by filename, not by path.
-let g:ctrlp_by_filename = 1
-
 " Open multiple files using horizontally split panes.
 let g:ctrlp_open_new_file = 'h'
 let g:ctrlp_open_multiple_files = 'h'
