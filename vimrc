@@ -17,7 +17,7 @@ set runtimepath^=~/.vim/git-vim
 " ctrlp plugin options
 
 " Ignore temporary/binary/useless files.
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/build/*
 
 " Open multiple files using horizontally split panes.
 let g:ctrlp_open_new_file = 'h'
