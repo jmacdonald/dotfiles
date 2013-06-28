@@ -34,6 +34,7 @@ plugins=(bundler cap gem git rails3 rake rbenv ruby)
 source $ZSH/oh-my-zsh.sh
 
 alias gd='git diff'
+alias lt='cd ~/projects/litmus'
 
 # Use vi-mode.
 bindkey -v
