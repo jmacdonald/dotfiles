@@ -35,6 +35,7 @@ source $ZSH/oh-my-zsh.sh
 
 alias gd='git diff'
 alias lt='cd ~/projects/litmus'
+alias bry='bundle exec pry'
 
 # Use vi-mode.
 bindkey -v

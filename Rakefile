@@ -22,3 +22,8 @@ task :vim do
     exec "git clone git@github.com:jmacdonald/git-vim.git #{Dir.home}/.vim/git-vim"
   end
 end
+
+task :pry do
+  # Symlink pryrc.
+  File.symlink "#{File.dirname(__FILE__)}/pryrc", ENV['HOME']+'/.pryrc' 
+end
