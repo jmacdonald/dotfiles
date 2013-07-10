@@ -22,3 +22,13 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/build/*
 " Open multiple files using horizontally split panes.
 let g:ctrlp_open_new_file = 'h'
 let g:ctrlp_open_multiple_files = 'h'
+
+"##############################################################################                                                                         
+" Easier split navigation                                                                                                                               
+"##############################################################################                                                                         
+
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <c-k> :wincmd k<CR>                                                                                                                       
+nmap <silent> <c-j> :wincmd j<CR>                                                                                                                       
+nmap <silent> <c-h> :wincmd h<CR>                                                                                                                       
+nmap <silent> <c-l> :wincmd l<CR>
