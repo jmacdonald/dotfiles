@@ -1,0 +1,30 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Delete the ~/.vimrc file, if it exists.
+if [ -a "$HOME/.vimrc" ]; then
+  rm ~/.vimrc
+fi
+
+# Symlink vimrc.
+ln -s "$DIR/vimrc" ~/.vimrc
+
+# Delete the vim directory, if it exists.
+if [ -a "$HOME/.vim" ]; then
+  rm -rf ~/.vim
+fi
+
+# Create the vim and bundle directories.
+mkdir -p ~/.vim/bundle
+
+# Install Vundle.
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+
+# Remove the ~/.pryrc file, if it exists.
+if [ -a ~/.pryrc ]; then
+  rm ~/.pryrc
+fi
+
+# Symlink pryrc.
+ln -s "$DIR/pryrc" ~/.pryrc
