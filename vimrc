@@ -8,11 +8,12 @@ set softtabstop=2
 filetype indent on
 set pastetoggle=<F2>
 
-" Load ctrlp plugin.
-set runtimepath^=~/.vim/ctrlp.vim
+" Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+Bundle 'gmarik/vundle'
 
-" Load git plugin.
-set runtimepath^=~/.vim/git-vim
+Bundle 'kien/ctrlp.vim'
 
 " ctrlp plugin options
 

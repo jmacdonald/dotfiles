@@ -12,15 +12,11 @@ task :vim do
   # Create the .vim directory, if it doesn't already exist.
   FileUtils.mkdir "#{Dir.home}/.vim" unless Dir.exists? "#{Dir.home}/.vim"
 
-  # Download ctrlp plugin.
-  unless Dir.exists? "#{Dir.home}/.vim/ctrlp.vim"
-    exec "git clone https://github.com/kien/ctrlp.vim.git #{Dir.home}/.vim/ctrlp.vim"
-  end
+  # Create the bundle directory, if it doesn't already exist.
+  FileUtils.mkdir "#{Dir.home}/.vim/bundle" unless Dir.exists? "#{Dir.home}/.vim/bundle"
 
-  # Download git plugin.
-  unless Dir.exists? "#{Dir.home}/.vim/git-vim"
-    exec "git clone git@github.com:jmacdonald/git-vim.git #{Dir.home}/.vim/git-vim"
-  end
+  # Install Vundle.
+  exec "git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle"
 end
 
 task :pry do
