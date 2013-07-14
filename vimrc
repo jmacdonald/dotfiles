@@ -18,6 +18,9 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-rails'
 
+" Airline theme
+let g:airline_theme='solarized'
+
 " ctrlp plugin options
 
 " Search by filename, not by path.
