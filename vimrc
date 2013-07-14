@@ -7,6 +7,7 @@ set shiftwidth=2
 set softtabstop=2
 filetype indent on
 set pastetoggle=<F2>
+set laststatus=2
 
 " Vundle
 set rtp+=~/.vim/bundle/vundle/
@@ -14,8 +15,13 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'kien/ctrlp.vim'
+Bundle 'bling/vim-airline'
+Bundle 'tpope/vim-rails'
 
 " ctrlp plugin options
+
+" Search by filename, not by path.
+let g:ctrlp_by_filename = 1
 
 " Ignore temporary/binary/useless files.
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/build/*
