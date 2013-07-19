@@ -17,6 +17,13 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-rails'
+Bundle 'terryma/vim-smooth-scroll'
+
+" Snippets
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
 
 " Airline theme
 let g:airline_theme='solarized'
@@ -47,5 +54,5 @@ nmap <silent> <c-l> :wincmd l<CR>
 " Fast scrolling
 "##############################################################################                                                                         
 
-nmap K 10k
-nmap J 10j
+nmap <silent> K :call smooth_scroll#up(20, 20, 2)<CR>
+nmap <silent> J :call smooth_scroll#down(20, 20, 2)<CR>
