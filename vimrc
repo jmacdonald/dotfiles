@@ -1,11 +1,8 @@
-" Enable syntax highlighting.
-syntax on
-
 " Setup indentation
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-filetype indent on
+filetype off
 set pastetoggle=<F2>
 set laststatus=2
 
@@ -17,12 +14,17 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-rails'
+Bundle 'kchmck/vim-coffee-script'
 
 " Snippets
 Bundle "MarcWeber/vim-addon-mw-utils"
 Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
+
+" Now that all plugins have loaded, turn onindentation and syntax highlighting.
+filetype plugin indent on
+syntax on
 
 " Airline theme
 let g:airline_theme='solarized'
