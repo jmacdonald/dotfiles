@@ -51,3 +51,6 @@ nmap <silent> <c-l> :wincmd l<CR>
 
 " Fast buffer switching
 nmap <Tab> :b#<CR>
+
+" Allow modified buffer switching
+set hidden
