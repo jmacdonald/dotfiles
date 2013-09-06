@@ -15,6 +15,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-rails'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'altercation/vim-colors-solarized'
 
 " Snippets
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -24,7 +26,9 @@ Bundle "honza/vim-snippets"
 
 " Now that all plugins have loaded, turn onindentation and syntax highlighting.
 filetype plugin indent on
-syntax on
+syntax enable
+set background=dark
+colorscheme solarized
 
 " Airline theme
 let g:airline_theme='solarized'
