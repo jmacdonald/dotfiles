@@ -14,6 +14,9 @@ export PATH="$HOME/.executables:$PATH"
 # Perl
 export PATH="/usr/local/ActivePerl-5.16/bin:$PATH"
 
+# NodeJS
+export PATH="/usr/local/share/npm/bin:$PATH"
+
 # Import proxy settings, if present.
 if [[ -a ~/.proxy ]]
 then
