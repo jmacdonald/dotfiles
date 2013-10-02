@@ -15,6 +15,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-rails'
 Bundle 'kchmck/vim-coffee-script'
+Bundle 'ingydotnet/yaml-vim'
+Bundle 'elixir-lang/vim-elixir'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'altercation/vim-colors-solarized'
 
