@@ -3,3 +3,5 @@
 	email = jordan@wastedintelligence.com
 [color]
 	ui = true
+[push]
+	default = current
