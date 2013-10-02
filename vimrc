@@ -6,6 +6,9 @@ filetype off
 set pastetoggle=<F2>
 set laststatus=2
 
+" Clipboard integration
+set clipboard=unnamed
+
 " Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
