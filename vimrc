@@ -9,6 +9,10 @@ set laststatus=2
 " Clipboard integration
 set clipboard=unnamed
 
+" Open splits to the right and bottom
+set splitbelow
+set splitright
+
 " Vundle
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
