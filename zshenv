@@ -17,6 +17,10 @@ export PATH="/usr/local/ActivePerl-5.16/bin:$PATH"
 # NodeJS
 export PATH="/usr/local/share/npm/bin:$PATH"
 
+# Go
+export GOPATH="$HOME/projects/go"
+export PATH=$PATH:$GOPATH/bin
+
 # Import proxy settings, if present.
 if [[ -a ~/.proxy ]]
 then
