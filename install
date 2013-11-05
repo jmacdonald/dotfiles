@@ -2,13 +2,31 @@
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# Delete the ~/.zshrc file, if it exists.
+if [ -a "$HOME/.zshrc" ]; then
+  rm ~/.zshrc
+fi
+
+# Delete the ~/.zshenv file, if it exists.
+if [ -a "$HOME/.zshenv" ]; then
+  rm ~/.zshenv
+fi
+
 # Delete the ~/.vimrc file, if it exists.
 if [ -a "$HOME/.vimrc" ]; then
   rm ~/.vimrc
 fi
 
-# Symlink vimrc.
+# Delete the ~/.gemrc file, if it exists.
+if [ -a "$HOME/.gemrc" ]; then
+  rm ~/.gemrc
+fi
+
+# Symlinks
+ln -s "$DIR/zshrc" ~/.zshrc
+ln -s "$DIR/zshenv" ~/.zshenv
 ln -s "$DIR/vimrc" ~/.vimrc
+ln -s "$DIR/gemrc" ~/.gemrc
 
 # Delete the vim directory, if it exists.
 if [ -a "$HOME/.vim" ]; then
