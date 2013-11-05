@@ -9,6 +9,9 @@ set laststatus=2
 " Clipboard integration
 set clipboard=unnamed
 
+" Backspace fix
+set backspace=indent,eol,start
+
 " Open splits to the right and bottom
 set splitbelow
 set splitright
