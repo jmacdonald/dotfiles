@@ -4,6 +4,9 @@ export EDITOR=vim
 # Rbenv
 eval "$(rbenv init -)"
 
+# Pow
+export PATH="/usr/local/opt/rbenv/shims:/usr/local/opt/rbenv/bin:$PATH"
+
 # Homebrew
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
