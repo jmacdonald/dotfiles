@@ -67,6 +67,11 @@ nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>                                                                                                                       
 nmap <silent> <c-l> :wincmd l<CR>
 
+" Easy ctrlp splits
+nmap <silent> <c-y> :vs<CR> <c-p>
+nmap <silent> <c-x> :sp<CR> <c-p>
+nmap <silent> <c-a> :vs<CR> :A<CR>
+
 " Fast buffer switching
 nmap <Tab> :b#<CR>
 
