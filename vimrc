@@ -57,6 +57,9 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/build/*
 let g:ctrlp_open_new_file = 'h'
 let g:ctrlp_open_multiple_files = 'h'
 
+" Search relative to the current directory.
+let g:ctrlp_working_path_mode = 0
+
 "##############################################################################                                                                         
 " Easier split navigation                                                                                                                               
 "##############################################################################                                                                         
