@@ -46,3 +46,6 @@ fi
 
 # Symlink pryrc.
 ln -s "$DIR/pryrc" ~/.pryrc
+
+echo "Don't forget to install these fonts:"
+open $DIR/fonts
