@@ -1,6 +1,9 @@
 # Set vim as the default editor
 export EDITOR=vim
 
+# Set tab width to 4 columns
+eval "tabs -4"
+
 # Rbenv
 eval "$(rbenv init -)"
 
