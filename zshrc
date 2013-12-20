@@ -39,3 +39,6 @@ alias bry='bundle exec pry'
 
 # Use vi-mode.
 bindkey -v
+
+# Disable auto-correct; I know what I'm doing. :)
+unsetopt correct_all
