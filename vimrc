@@ -1,8 +1,13 @@
-" Setup indentation
+" Set up default indentation
 set expandtab
 set shiftwidth=2
 set softtabstop=2
+
+" Set up Go indentation
+autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4 softtabstop&
+
 filetype off
+filetype plugin indent off
 set pastetoggle=<F2>
 set laststatus=2
 
@@ -23,12 +28,16 @@ Bundle 'gmarik/vundle'
 
 Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'altercation/vim-colors-solarized'
+
+" Languages/Frameworks
+Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'ingydotnet/yaml-vim'
 Bundle 'elixir-lang/vim-elixir'
-Bundle 'vim-scripts/taglist.vim'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'jnwhiteh/vim-golang'
 
 " Snippets
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -36,7 +45,7 @@ Bundle "tomtom/tlib_vim"
 Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 
-" Now that all plugins have loaded, turn onindentation and syntax highlighting.
+" Now that all plugins have loaded, turn on indentation and syntax highlighting.
 filetype plugin indent on
 syntax enable
 set background=dark
